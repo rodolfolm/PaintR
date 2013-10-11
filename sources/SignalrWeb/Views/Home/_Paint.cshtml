@@ -1,0 +1,25 @@
+﻿@model SignalrWeb.Models.PaintModel
+
+@Html.HiddenFor(m => m.Id)
+<canvas id="canvas" width="800" height="500"></canvas>
+		
+<ul id="colors">
+	<li><a href="#" data-color="#000000" class="actif">Noir</a></li>
+	<li><a href="#" data-color="#ffffff">Blanc</a></li>
+	<li><a href="#" data-color="#ff0000">Rouge</a></li>
+	<li><a href="#" data-color="brown">Marron</a></li>
+	<li><a href="#" data-color="orange">Orange</a></li>
+	<li><a href="#" data-color="yellow">Jaune</a></li>
+	<li><a href="#" data-color="green">Vert</a></li>
+	<li><a href="#" data-color="cyan">Cyan</a></li>
+	<li><a href="#" data-color="blue">Bleu</a></li>
+	<li><a href="#" data-color="indigo">Indigo</a></li>
+	<li><a href="#" data-color="Violet">Violet</a></li>
+	<li><a href="#" data-color="pink">Rose</a></li>
+</ul>
+		
+<div id="brush">
+    <label for="width_brush">Width brush:</label>
+    <input id="width_brush" type="range" min="2" max="50" value="5" />
+    <output id="output">5 pixels</output>
+</div>

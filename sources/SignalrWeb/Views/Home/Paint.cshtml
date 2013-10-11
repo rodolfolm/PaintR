@@ -1,0 +1,13 @@
+﻿@model SignalrWeb.Models.PaintModel
+
+<header>
+    <p>
+        @Html.ActionLink("Create your private painting room","Private","Home")
+        Users connected: <span id="users">0</span>
+    </p>
+</header>
+
+@Html.Partial("_Paint",Model)
+
+
+
